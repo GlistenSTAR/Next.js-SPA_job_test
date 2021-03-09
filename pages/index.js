@@ -12,7 +12,7 @@ const Index = ({allJobs}) => (
   </div>
 )
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:3000/api/jobs');
+  const res = await fetch('https://denis-clipboardhealthtest.herokuapp.com/api/jobs');
   const data = await res.json()
   
   return {
